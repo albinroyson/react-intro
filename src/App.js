@@ -1,15 +1,15 @@
-import React from "react";
+import React, { Component } from "react";
+import HelloWorld from "./components/screens/HelloWorld";
 
-class App extends React.Component {
-  counter=10;
+class App extends Component {
   render(){
-    return (
-      <ul>
-        <li>apple</li>
-        <li>orange</li>
-        <li>Grapes</li>
-      </ul>
-    );
+    return( 
+    <>
+      <HelloWorld 
+      a={10}
+      b={20} />
+    </>
+    )
   }
 }
 
