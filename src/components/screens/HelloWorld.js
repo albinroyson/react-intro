@@ -11,6 +11,9 @@ class HelloWorld extends Component {
                 <h1>{this.state.counter}</h1>
                 <button onClick={() =>(this.setState({counter:this.state.counter +  10}))}>
                 increement</button>
+                <button onClick={() =>(this.setState({counter:this.state.counter - 10}))}>
+                    decrement
+                </button>
             </>
         ) 
     }
